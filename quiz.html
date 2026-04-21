@@ -30,7 +30,6 @@
     .btn-explore { background: var(--gold); color: var(--ink); padding: 12px 28px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; margin-right: 12px; margin-top: 24px; }
     .btn-explore:hover { background: var(--gold-dark); }
     .hidden { display: none; }
-    .error-message { color: #d32f2f; font-size: 0.9rem; margin-top: 8px; }
   </style>
 </head>
 <body>
@@ -243,7 +242,6 @@
       </div>
 
       <button type="submit" class="btn-quiz" id="submit-btn">Voir mes recommandations</button>
-      <div class="error-message hidden" id="error-msg"></div>
     </form>
   </div>
 
@@ -308,13 +306,147 @@
 
 <script src="main.js"></script>
 <script>
-const API_URL = 'https://modzi-info-production.up.railway.app';
+// Expert-level recommendation engine (converted from Python backend)
+function calculateRecommendations(responses) {
+  const scores = {"France": 0, "Allemagne": 0, "Belgique": 0, "Italie": 0, "Canada": 0};
+
+  // Budget (weight: 3)
+  const budget = responses.budget || "";
+  if (budget === "tight") {
+    scores["France"] += 3;
+    scores["Allemagne"] += 4;
+    scores["Belgique"] += 2;
+    scores["Italie"] += 3;
+  } else if (budget === "medium") {
+    scores["France"] += 2;
+    scores["Belgique"] += 3;
+    scores["Canada"] += 1;
+  } else if (budget === "high") {
+    scores["Canada"] += 4;
+  }
+
+  // Language (weight: 3)
+  const language = responses.language || "";
+  if (language === "french") {
+    scores["France"] += 4;
+    scores["Belgique"] += 4;
+    scores["Canada"] += 1;
+  } else if (language === "english") {
+    scores["Canada"] += 4;
+    scores["Allemagne"] += 2;
+  } else if (language === "italian") {
+    scores["Italie"] += 4;
+  } else if (language === "mix") {
+    scores["Canada"] += 3;
+    scores["Belgique"] += 2;
+    scores["Allemagne"] += 1;
+  }
+
+  // Field of study (weight: 4 - MOST IMPORTANT)
+  const field = responses.field || "";
+  const fieldMap = {
+    "tech_engineering": {"Allemagne": 5, "Canada": 4, "France": 2},
+    "computer_science": {"Allemagne": 5, "Canada": 5, "France": 2},
+    "art_design": {"Italie": 5, "France": 3, "Belgique": 2},
+    "law": {"France": 4, "Belgique": 3, "Canada": 2},
+    "medicine": {"France": 4, "Allemagne": 3, "Canada": 2},
+    "business": {"France": 3, "Belgique": 3, "Canada": 4},
+    "sciences": {"Allemagne": 4, "France": 3, "Italie": 2},
+    "agriculture": {"Allemagne": 3, "France": 2, "Canada": 3},
+    "humanities": {"France": 4, "Belgique": 3, "Italie": 2},
+    "tourism": {"Italie": 4, "France": 3, "Belgique": 2},
+  };
+  if (field in fieldMap) {
+    for (const [country, bonus] of Object.entries(fieldMap[field])) {
+      scores[country] += bonus;
+    }
+  }
+
+  // Timeline (weight: 2)
+  const timeline = responses.timeline || "";
+  if (timeline === "short") {
+    scores["France"] += 2;
+    scores["Belgique"] += 2;
+  } else if (timeline === "long") {
+    scores["Canada"] += 3;
+    scores["Allemagne"] += 2;
+  }
+
+  // Post-graduation work (weight: 3)
+  const postWork = responses.post_work || "";
+  if (postWork === "stay") {
+    scores["Canada"] += 4;
+    scores["Allemagne"] += 3;
+    scores["France"] += 2;
+  } else if (postWork === "maybe") {
+    scores["France"] += 2;
+    scores["Belgique"] += 2;
+    scores["Canada"] += 2;
+  }
+
+  // Climate preference (weight: 1)
+  const climate = responses.climate || "";
+  if (climate === "warm") {
+    scores["Italie"] += 2;
+    scores["France"] += 1;
+  } else if (climate === "cold") {
+    scores["Canada"] += 2;
+    scores["Allemagne"] += 1;
+  }
+
+  // City size (weight: 1)
+  const city = responses.city || "";
+  if (city === "big") {
+    scores["Canada"] += 1;
+    scores["France"] += 1;
+  } else if (city === "cozy") {
+    scores["Italie"] += 1;
+  }
+
+  // Credential recognition (weight: 2)
+  const recognition = responses.recognition || "";
+  if (recognition === "global") {
+    scores["Canada"] += 2;
+    scores["Allemagne"] += 2;
+  } else if (recognition === "europe") {
+    scores["France"] += 2;
+    scores["Allemagne"] += 2;
+    scores["Belgique"] += 2;
+  }
+
+  // Academic level (weight: 2)
+  const academic = responses.academic_level || "";
+  if (academic === "excellent") {
+    scores["Canada"] += 3;
+    scores["Allemagne"] += 3;
+    scores["France"] += 1;
+  } else if (academic === "good") {
+    scores["Canada"] += 2;
+    scores["Allemagne"] += 2;
+    scores["France"] += 1;
+    scores["Belgique"] += 1;
+  } else if (academic === "average") {
+    scores["France"] += 2;
+    scores["Belgique"] += 2;
+    scores["Italie"] += 1;
+  } else if (academic === "acceptable") {
+    scores["France"] += 1;
+    scores["Belgique"] += 1;
+    scores["Italie"] += 1;
+  }
+
+  // Sort by score descending
+  const ranked = Object.entries(scores)
+    .sort(([,a], [,b]) => b - a)
+    .map(([country, score]) => ({country, score}));
+
+  return ranked;
+}
 
 const form = document.getElementById('quiz-form');
 const quizSection = document.getElementById('quiz-section');
 const resultsSection = document.getElementById('results-section');
 const progressBar = document.getElementById('progress-bar');
-const errorMsg = document.getElementById('error-msg');
 
 // Update progress bar
 form.addEventListener('change', updateProgress);
@@ -322,20 +454,20 @@ form.addEventListener('change', updateProgress);
 function updateProgress() {
   const questions = document.querySelectorAll('.quiz-question');
   let answered = 0;
-  
+
   questions.forEach(q => {
     const checked = q.querySelector('input[type="radio"]:checked');
     if (checked) answered++;
   });
-  
+
   const progress = (answered / questions.length) * 100;
   progressBar.style.width = progress + '%';
 }
 
 // Submit form
-form.addEventListener('submit', async (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  
+
   const formData = new FormData(form);
   const data = {
     budget: formData.get('budget'),
@@ -346,34 +478,18 @@ form.addEventListener('submit', async (e) => {
     climate: formData.get('climate'),
     city: formData.get('city'),
     recognition: formData.get('recognition'),
-    academic_level: formData.get('academic_level'),
-    user_id: 'user_' + Date.now()
+    academic_level: formData.get('academic_level')
   };
-  
-  try {
-    errorMsg.classList.add('hidden');
-    const response = await fetch(`${API_URL}/api/quiz/submit`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    
-    if (!response.ok) throw new Error('Erreur serveur');
-    
-    const result = await response.json();
-    displayResults(result.recommendations);
-    
-  } catch (error) {
-    console.error('Erreur:', error);
-    errorMsg.textContent = 'Erreur de connexion au serveur. Réessaye plus tard.';
-    errorMsg.classList.remove('hidden');
-  }
+
+  // Calculate recommendations locally
+  const recommendations = calculateRecommendations(data);
+  displayResults(recommendations);
 });
 
 function displayResults(recommendations) {
   const list = document.getElementById('recommendations-list');
   list.innerHTML = '';
-  
+
   recommendations.slice(0, 3).forEach((rec, idx) => {
     const countryLinks = {
       'France': 'france.html',
@@ -382,10 +498,10 @@ function displayResults(recommendations) {
       'Italie': 'italie.html',
       'Canada': 'canada.html'
     };
-    
+
     const link = countryLinks[rec.country] || 'destinations.html';
     const positions = ['1er choix', '2e choix', '3e choix'];
-    
+
     list.innerHTML += `
       <div class="recommendation-item">
         <h4>${rec.country}</h4>
@@ -394,20 +510,9 @@ function displayResults(recommendations) {
       </div>
     `;
   });
-  
+
   quizSection.classList.add('hidden');
   resultsSection.classList.remove('hidden');
-}
-
-function restartQuiz() {
-  form.reset();
-  progressBar.style.width = '0%';
-  quizSection.classList.remove('hidden');
-  resultsSection.classList.add('hidden');
-}
-
-function goToDestinations() {
-  window.location.href = 'destinations.html';
 }
 </script>
 </body>
