@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modzi Info — Étudier à l'Étranger depuis l'Afrique</title>
-  <meta name="description" content="Modzi Info t'accompagne dans ton projet d'études à l'étranger. Visa étudiant, conditions d'admission, budget — tout ce qu'il faut savoir pour étudier en France, Allemagne, Belgique, Italie ou Canada.">
-  <meta name="keywords" content="études à l'étranger, visa étudiant, étudier en France, étudier en Allemagne, étudier au Canada, étudier en Belgique, bourses Afrique">
+  <meta name="description"
+    content="Modzi Info t'accompagne dans ton projet d'études à l'étranger. Visa étudiant, conditions d'admission, budget — tout ce qu'il faut savoir pour étudier en France, Allemagne, Belgique, Italie ou Canada.">
+  <meta name="keywords"
+    content="études à l'étranger, visa étudiant, étudier en France, étudier en Allemagne, étudier au Canada, étudier en Belgique, bourses Afrique">
   <meta property="og:title" content="Modzi Info — Étudier à l'Étranger depuis l'Afrique">
-  <meta property="og:description" content="Tout ce qu'il faut savoir pour étudier en Europe et au Canada. Visa, budget, démarches — on t'explique tout.">
+  <meta property="og:description"
+    content="Tout ce qu'il faut savoir pour étudier en Europe et au Canada. Visa, budget, démarches — on t'explique tout.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://modzi.info">
   <link rel="canonical" href="https://modzi.info">
@@ -15,515 +19,473 @@
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Modzi Info","url":"https://modzi.info","description":"Plateforme d'orientation pour étudiants africains souhaitant étudier à l'étranger","contactPoint":{"@type":"ContactPoint","telephone":"+228-99-32-46-36","contactType":"customer service"}}
+  {"@context":"https://schema.org","@type":"Organization","name":"Modzi Info","url":"https://modzi.info","description":"Plateforme d'orientation pour étudiants africains souhaitant étudier à l'étranger","contactPoint":{"@type":"ContactPoint","telephone":"+33-6-75-70-09-25","contactType":"customer service"}}
   </script>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" aria-label="Navigation principale">
-  <div class="navbar__inner">
-    <a class="navbar__logo" href="index.html" aria-label="Modzi Info - Accueil">
-      <img src="images/logo.png" alt="Modzi Info Logo" width="64" height="64" onerror="this.nextElementSibling.style.display='inline';">
-      <span class="navbar__logo-text" style="display:none;">Modzi Info</span>
-    </a>
-    <ul class="navbar__links" role="list">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="destinations.html">Destinations</a></li>
-      <li><a href="articles/index.html">Articles</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="#" class="btn btn-primary navbar__cta" data-wa-generic style="padding:10px 22px;font-size:0.78rem;">
-      <i class="fas fa-comments"></i> Conseiller
-    </a>
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- MOBILE MENU -->
-<div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu mobile">
-  <button class="close-btn" aria-label="Fermer le menu">✕</button>
-  <a href="index.html">Accueil</a>
-  <a href="destinations.html">Destinations</a>
-  <a href="articles/index.html">Articles</a>
-  <a href="contact.html">Contact</a>
-  <a href="#" data-wa-generic class="btn btn-whatsapp" style="margin-top:16px;"><i class="fas fa-comments"></i> Parler à un conseiller</a>
-</div>
-
-<!-- HERO -->
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero__bg" aria-hidden="true"></div>
-  <div class="hero__grid-lines" aria-hidden="true"></div>
-  <div class="container">
-    <div class="hero__content">
-      <div class="hero__eyebrow">Europe · Canada</div>
-      <h1 class="hero__title" id="hero-title">
-        Tu veux étudier<br>à l'étranger ?<br>
-        <em>On t'explique comment</em><br>réussir ton projet.
-      </h1>
-      <p class="hero__subtitle">
-        Visa, admission, budget, démarches — tout ce qu'il faut savoir pour concrétiser ton projet sans te tromper.
-      </p>
-      <div class="hero__actions">
-        <a href="quiz.html" class="btn btn-primary"><i class="fas fa-lightbulb"></i> Fais le quiz</a>
-        <a href="destinations.html" class="btn btn-outline" style="border-color:rgba(212,185,106,0.5);color:var(--gold-pale);"><i class="fas fa-globe"></i> Choisir mon pays</a>
-      </div>
-    </div>
-  </div>
-  <div class="hero__flags" aria-hidden="true">
-    <div class="hero__flag-chip"><span>🇫🇷</span><span>France</span></div>
-    <div class="hero__flag-chip"><span>🇩🇪</span><span>Allemagne</span></div>
-    <div class="hero__flag-chip"><span>🇧🇪</span><span>Belgique</span></div>
-    <div class="hero__flag-chip"><span>🇮🇹</span><span>Italie</span></div>
-    <div class="hero__flag-chip"><span>🇨🇦</span><span>Canada</span></div>
-  </div>
-  <div class="hero__scroll" aria-hidden="true">
-    <div class="hero__scroll-line"></div>
-    <span>Découvrir</span>
-  </div>
-</section>
-
-<!-- STATS BAR -->
-<div class="stats-bar" aria-label="Chiffres clés">
-  <div class="stats-bar__inner">
-    <div class="stat-item">
-      <span class="stat-item__num" data-counter="5" data-suffix="">5</span>
-      <span class="stat-item__label">Pays couverts</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item__num" data-counter="100" data-suffix="%">100%</span>
-      <span class="stat-item__label">Gratuit</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item__num" data-counter="10" data-suffix="+">10+</span>
-      <span class="stat-item__label">Guides détaillés</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item__num" data-counter="24" data-suffix="h">24h</span>
-      <span class="stat-item__label">Réponse WhatsApp</span>
-    </div>
-  </div>
-</div>
-
-<!-- DESTINATIONS -->
-<section class="section" id="destinations" aria-labelledby="dest-title">
-  <div class="container">
-    <div class="fade-up">
-      <div class="tag">Destinations</div>
-      <h2 class="section-title" id="dest-title">Choisis ton <em>pays de destination</em></h2>
-      <p class="section-subtitle">5 pays européens et le Canada. Clique sur un pays pour découvrir toutes les conditions d'admission et de visa.</p>
-    </div>
-    <div class="destinations-grid">
-      <article class="dest-card fade-up" onclick="window.location='france.html'" tabindex="0" role="button" aria-label="Étudier en France">
-        <div class="dest-card__header">
-          <img src="images/fr.png" alt="Drapeau France" class="dest-card__flag" style="height:auto;">
-          <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#002395,#fff,#ed2939);"></div>
-        </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__country">France</h3>
-          <p class="dest-card__desc">Le choix numéro 1 des étudiants africains. Frais réduits dans les universités publiques, réseau culturel fort, nombreuses bourses.</p>
-          <div class="dest-card__meta">
-            <span class="meta-tag">Campus France</span>
-            <span class="meta-tag">Visa D</span>
-            <span class="meta-tag">Bourses</span>
-          </div>
-          <a href="france.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions →</a>
-        </div>
-      </article>
-      <article class="dest-card fade-up" onclick="window.location='allemagne.html'" tabindex="0" role="button" aria-label="Étudier en Allemagne">
-        <div class="dest-card__header">
-          <img src="images/de.png" alt="Drapeau Allemagne" class="dest-card__flag" style="height:auto;">
-          <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#000,#dd0000,#ffce00);"></div>
-        </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__country">Allemagne</h3>
-          <p class="dest-card__desc">Universités gratuites ou quasi-gratuites, excellence académique, marché de l'emploi très attractif pour les diplômés.</p>
-          <div class="dest-card__meta">
-            <span class="meta-tag">Gratuit</span>
-            <span class="meta-tag">APS 18 mois</span>
-            <span class="meta-tag">Technologie</span>
-          </div>
-          <a href="allemagne.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions →</a>
-        </div>
-      </article>
-      <article class="dest-card fade-up" onclick="window.location='belgique.html'" tabindex="0" role="button" aria-label="Étudier en Belgique">
-        <div class="dest-card__header">
-          <img src="images/be.png" alt="Drapeau Belgique" class="dest-card__flag" style="height:auto;">
-          <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#000,#f00,#fdda24);"></div>
-        </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__country">Belgique</h3>
-          <p class="dest-card__desc">Francophone et accessible, la Belgique offre des formations de qualité avec une bonne qualité de vie et des frais raisonnables.</p>
-          <div class="dest-card__meta">
-            <span class="meta-tag">Francophone</span>
-            <span class="meta-tag">Visa C</span>
-            <span class="meta-tag">ULB · KUL</span>
-          </div>
-          <a href="belgique.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions →</a>
-        </div>
-      </article>
-      <article class="dest-card fade-up" onclick="window.location='italie.html'" tabindex="0" role="button" aria-label="Étudier en Italie">
-        <div class="dest-card__header">
-          <img src="images/it.png" alt="Drapeau Italie" class="dest-card__flag" style="height:auto;">
-          <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#009246,#fff,#ce2b37);"></div>
-        </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__country">Italie</h3>
-          <p class="dest-card__desc">Architecture, design, art et ingénierie — l'Italie excelle dans ces domaines avec des frais de scolarité parmi les plus bas d'Europe.</p>
-          <div class="dest-card__meta">
-            <span class="meta-tag">Art & Design</span>
-            <span class="meta-tag">Visa étude</span>
-            <span class="meta-tag">Abordable</span>
-          </div>
-          <a href="italie.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions →</a>
-        </div>
-      </article>
-      <article class="dest-card fade-up" onclick="window.location='canada.html'" tabindex="0" role="button" aria-label="Étudier au Canada">
-        <div class="dest-card__header">
-          <img src="images/ca.png" alt="Drapeau Canada" class="dest-card__flag" style="height:auto;">
-          <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#ff0000,#fff,#ff0000);"></div>
-        </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__country">Canada</h3>
-          <p class="dest-card__desc">Bilingue français-anglais, le Canada offre une porte d'entrée vers la résidence permanente. Idéal pour un projet long terme.</p>
-          <div class="dest-card__meta">
-            <span class="meta-tag">Immigration</span>
-            <span class="meta-tag">Permis études</span>
-            <span class="meta-tag">Bilingue</span>
-          </div>
-          <a href="canada.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="section section--beige" aria-labelledby="how-title">
-  <div class="container">
-    <div class="fade-up" style="text-align:center;">
-      <div class="tag">Comment ça marche</div>
-      <h2 class="section-title" id="how-title">3 étapes pour <em>réaliser ton projet</em></h2>
-      <p class="section-subtitle" style="margin:16px auto 0;text-align:center;">Un processus simple, clair et guidé pour ne rien oublier.</p>
-    </div>
-    <div class="steps">
-      <div class="step fade-up">
-        <div class="step__num">1</div>
-        <h3 class="step__title">Choisir un pays</h3>
-        <p class="step__desc">Compare les 5 destinations selon ton profil, ton budget et tes objectifs. Chaque pays a ses spécificités — on t'aide à voir clair.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step__num">2</div>
-        <h3 class="step__title">Comprendre les démarches</h3>
-        <p class="step__desc">Visa, inscription, logement — nos guides détaillés couvrent chaque étape pour que tu sois prêt(e) bien avant les délais.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step__num">3</div>
-        <h3 class="step__title">Lancer ta candidature</h3>
-        <p class="step__desc">Tu as toutes les clés en main. Notre équipe reste disponible sur WhatsApp pour t'accompagner jusqu'à l'obtention de ton visa.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SOCIAL PROOF -->
-<section class="section" aria-labelledby="testimonials-title">
-  <div class="container">
-    <div class="fade-up" style="text-align:center;">
-      <div class="tag">Témoignages</div>
-      <h2 class="section-title" id="testimonials-title">Ils nous font <em>confiance</em></h2>
-      <p class="section-subtitle" style="margin:16px auto 0;text-align:center;">Plus de 500 étudiants africains ont trouvé leur destination grâce à Modzi Info.</p>
-    </div>
-    
-    <div class="testimonials-grid">
-      <div class="testimonials-container">
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Modzi Info m'a sauvé ! J'étais complètement perdu pour mon dossier Campus France. En 3 mois avec leur aide, j'avais mon visa pour Paris. Merci infiniment !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👨‍🎓</div>
-            <div>
-              <div class="testimonial-name">Kofi</div>
-              <div class="testimonial-location">Togo → France</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Les guides sont super complets. J'ai suivi chaque étape et j'ai été acceptée à Berlin avec une bourse Erasmus+. Le meilleur conseil ? La lettre de motivation personnalisée !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👩‍🎓</div>
-            <div>
-              <div class="testimonial-name">Aïssatou</div>
-              <div class="testimonial-location">Sénégal → Allemagne</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"J'ai contacté l'équipe sur WhatsApp avec une question impossible. Ils m'ont répondu en 2h. Grâce à eux, je suis maintenant étudiant à Toronto et en route pour la RP !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👨‍🎓</div>
-            <div>
-              <div class="testimonial-name">Marc</div>
-              <div class="testimonial-location">Cameroun → Canada</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Sans Modzi Info, je n'aurais jamais réussi à obtenir mon visa pour l'Italie. Leur guide sur les bourses m'a permis d'économiser 5000€ par an. Une équipe exceptionnelle !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👩‍🎓</div>
-            <div>
-              <div class="testimonial-name">Fatima</div>
-              <div class="testimonial-location">Maroc → Italie</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"J'ai eu peur au début, mais leur accompagnement personnalisé m'a rassuré. Aujourd'hui je suis en Master à Bruxelles et je recommande Modzi Info à tous mes amis !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👨‍🎓</div>
-            <div>
-              <div class="testimonial-name">Jean-Pierre</div>
-              <div class="testimonial-location">Côte d'Ivoire → Belgique</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Leur expertise sur le Canada est incroyable. Ils connaissent tous les détails sur le PGWP et l'immigration. Merci pour cette opportunité de changer de vie !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👩‍🎓</div>
-            <div>
-              <div class="testimonial-name">Sarah</div>
-              <div class="testimonial-location">Gabon → Canada</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Duplication pour l'effet infini -->
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Modzi Info m'a sauvé ! J'étais complètement perdu pour mon dossier Campus France. En 3 mois avec leur aide, j'avais mon visa pour Paris. Merci infiniment !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👨‍🎓</div>
-            <div>
-              <div class="testimonial-name">Kofi</div>
-              <div class="testimonial-location">Togo → France</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Les guides sont super complets. J'ai suivi chaque étape et j'ai été acceptée à Berlin avec une bourse Erasmus+. Le meilleur conseil ? La lettre de motivation personnalisée !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👩‍🎓</div>
-            <div>
-              <div class="testimonial-name">Aïssatou</div>
-              <div class="testimonial-location">Sénégal → Allemagne</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"J'ai contacté l'équipe sur WhatsApp avec une question impossible. Ils m'ont répondu en 2h. Grâce à eux, je suis maintenant étudiant à Toronto et en route pour la RP !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👨‍🎓</div>
-            <div>
-              <div class="testimonial-name">Marc</div>
-              <div class="testimonial-location">Cameroun → Canada</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Sans Modzi Info, je n'aurais jamais réussi à obtenir mon visa pour l'Italie. Leur guide sur les bourses m'a permis d'économiser 5000€ par an. Une équipe exceptionnelle !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👩‍🎓</div>
-            <div>
-              <div class="testimonial-name">Fatima</div>
-              <div class="testimonial-location">Maroc → Italie</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"J'ai eu peur au début, mais leur accompagnement personnalisé m'a rassuré. Aujourd'hui je suis en Master à Bruxelles et je recommande Modzi Info à tous mes amis !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👨‍🎓</div>
-            <div>
-              <div class="testimonial-name">Jean-Pierre</div>
-              <div class="testimonial-location">Côte d'Ivoire → Belgique</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Leur expertise sur le Canada est incroyable. Ils connaissent tous les détails sur le PGWP et l'immigration. Merci pour cette opportunité de changer de vie !"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">👩‍🎓</div>
-            <div>
-              <div class="testimonial-name">Sarah</div>
-              <div class="testimonial-location">Gabon → Canada</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin-top:64px;">
-      <div style="text-align:center;padding:24px;">
-        <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">500+</div>
-        <div style="font-size:0.9rem;color:var(--muted);">Étudiants accompagnés</div>
-      </div>
-      <div style="text-align:center;padding:24px;">
-        <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">92%</div>
-        <div style="font-size:0.9rem;color:var(--muted);">Taux de succès visa</div>
-      </div>
-      <div style="text-align:center;padding:24px;">
-        <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">5</div>
-        <div style="font-size:0.9rem;color:var(--muted);">Pays couverts</div>
-      </div>
-      <div style="text-align:center;padding:24px;">
-        <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">&lt;24h</div>
-        <div style="font-size:0.9rem;color:var(--muted);">Temps de réponse</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ARTICLES -->
-<section class="section" id="articles" aria-labelledby="articles-title">
-  <div class="container">
-    <div class="fade-up" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
-      <div>
-        <div class="tag">Ressources</div>
-        <h2 class="section-title" id="articles-title">Guides &amp; <em>Conseils pratiques</em></h2>
-      </div>
-      <a href="articles/index.html" class="btn btn-outline">Tous les articles →</a>
-    </div>
-    <div class="articles-grid">
-      <article class="article-card fade-up">
-        <div class="article-card__thumb"><img src="images/article 1.jpg" alt="Documents et visa" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="article-card__body">
-          <div class="article-card__category">Visa &amp; Démarches</div>
-          <h3 class="article-card__title">Comment obtenir un visa étudiant en Europe : le guide complet</h3>
-          <p class="article-card__excerpt">Types de visa, documents requis, délais, entretien consulaire — tout ce que tu dois savoir avant de déposer ton dossier.</p>
-          <div class="article-card__footer">
-            <span>12 min de lecture</span>
-            <a href="articles/index.html#modal-visa-etudiant" class="btn btn-primary" style="padding:8px 18px;font-size:0.75rem;">Lire →</a>
-          </div>
-        </div>
-      </article>
-      <article class="article-card fade-up">
-        <div class="article-card__thumb"><img src="images/article 2.jpg" alt="Budget et finances" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="article-card__body">
-          <div class="article-card__category">Budget &amp; Finances</div>
-          <h3 class="article-card__title">Budget réaliste pour étudier à l'étranger depuis l'Afrique</h3>
-          <p class="article-card__excerpt">Frais de scolarité, logement, alimentation, transport — un budget pays par pays pour préparer ton projet sans mauvaises surprises.</p>
-          <div class="article-card__footer">
-            <span>9 min de lecture</span>
-            <a href="articles/index.html#modal-budget-etudes" class="btn btn-primary" style="padding:8px 18px;font-size:0.75rem;">Lire →</a>
-          </div>
-        </div>
-      </article>
-      <article class="article-card fade-up">
-        <div class="article-card__thumb"><img src="images/article 3.jpg" alt="Erreurs à éviter" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="article-card__body">
-          <div class="article-card__category">Erreurs à éviter</div>
-          <h3 class="article-card__title">Les 10 erreurs qui font rater un visa étudiant</h3>
-          <p class="article-card__excerpt">Dossier incomplet, mauvais timing, lettre de motivation bâclée… Ces erreurs peuvent coûter un an d'attente. Évite-les.</p>
-          <div class="article-card__footer">
-            <span>8 min de lecture</span>
-            <a href="articles/index.html#modal-erreurs-visa" class="btn btn-primary" style="padding:8px 18px;font-size:0.75rem;">Lire →</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- CONVERSION CTA -->
-<section class="section section--dark conversion" aria-labelledby="cta-title">
-  <div class="conversion__bg" aria-hidden="true"></div>
-  <div class="container conversion__content">
-    <div class="fade-up">
-      <div class="tag tag--light">Accompagnement</div>
-      <h2 class="conversion__title" id="cta-title">Besoin d'aide pour<br>ton <em>projet d'études</em> ?</h2>
-      <p class="conversion__text">
-        Notre équipe répond à toutes tes questions sur WhatsApp. Visa, dossier, université, budget — on t'accompagne de A à Z.
-      </p>
-      <a href="#" class="btn btn-whatsapp" data-wa-generic>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Parler à un conseiller
+  <!-- NAVBAR -->
+  <nav class="navbar" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="index.html" aria-label="Modzi Info - Accueil">
+        <img src="images/logo.png" alt="Modzi Info Logo" width="64" height="64"
+          onerror="this.nextElementSibling.style.display='inline';">
+        <span class="navbar__logo-text" style="display:none;">Modzi Info</span>
       </a>
-      <div class="conversion__trust">
-        <div class="conversion__trust-item">Réponse sous 24h</div>
-        <div class="conversion__trust-item">Conseils personnalisés</div>
-        <div class="conversion__trust-item">100% gratuit</div>
-        <div class="conversion__trust-item">Sans engagement</div>
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="articles/index.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="btn btn-primary navbar__cta" data-wa-generic style="padding:10px 22px;font-size:0.78rem;">
+        <i class="fas fa-comments"></i> Conseiller
+      </a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu mobile">
+    <button class="close-btn" aria-label="Fermer le menu">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="articles/index.html">Articles</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" data-wa-generic class="btn btn-whatsapp" style="margin-top:16px;"><i class="fas fa-comments"></i> Parler
+      à un conseiller</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__grid-lines" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">Europe · Canada</div>
+        <h1 class="hero__title" id="hero-title">
+          Tu veux étudier<br>à l'étranger ?<br>
+          <em>On t'explique comment</em><br>réussir ton projet.
+        </h1>
+        <p class="hero__subtitle">
+          Visa, admission, budget, démarches — tout ce qu'il faut savoir pour concrétiser ton projet sans te tromper.
+        </p>
+        <div class="hero__actions">
+          <a href="quiz.html" class="btn btn-primary"><i class="fas fa-lightbulb"></i> Fais le quiz</a>
+          <a href="destinations.html" class="btn btn-outline"
+            style="border-color:rgba(212,185,106,0.5);color:var(--gold-pale);"><i class="fas fa-globe"></i> Choisir mon
+            pays</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__flags" aria-hidden="true">
+      <div class="hero__flag-chip"><span>🇫🇷</span><span>France</span></div>
+      <div class="hero__flag-chip"><span>🇩🇪</span><span>Allemagne</span></div>
+      <div class="hero__flag-chip"><span>🇧🇪</span><span>Belgique</span></div>
+      <div class="hero__flag-chip"><span>🇮🇹</span><span>Italie</span></div>
+      <div class="hero__flag-chip"><span>🇨🇦</span><span>Canada</span></div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Découvrir</span>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar" aria-label="Chiffres clés">
+    <div class="stats-bar__inner">
+      <div class="stat-item">
+        <span class="stat-item__num" data-counter="5" data-suffix="">5</span>
+        <span class="stat-item__label">Pays couverts</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num" data-counter="100" data-suffix="%">100%</span>
+        <span class="stat-item__label">Gratuit</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num" data-counter="10" data-suffix="+">10+</span>
+        <span class="stat-item__label">Guides détaillés</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num" data-counter="24" data-suffix="h">24h</span>
+        <span class="stat-item__label">Réponse WhatsApp</span>
       </div>
     </div>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer role="contentinfo">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <img src="assets/logo.png" alt="Modzi Info" onerror="this.style.display='none'">
-        <p>La plateforme de référence pour les étudiants qui veulent étudier en Europe et au Canada.</p>
+  <!-- DESTINATIONS -->
+  <section class="section" id="destinations" aria-labelledby="dest-title">
+    <div class="container">
+      <div class="fade-up">
+        <div class="tag">Destinations</div>
+        <h2 class="section-title" id="dest-title">Choisis ton <em>pays de destination</em></h2>
+        <p class="section-subtitle">5 pays européens et le Canada. Clique sur un pays pour découvrir toutes les
+          conditions d'admission et de visa.</p>
       </div>
-      <div class="footer__col">
-        <h4>Destinations</h4>
-        <ul>
-          <li><a href="pays/france.html">🇫🇷 France</a></li>
-          <li><a href="pays/allemagne.html">🇩🇪 Allemagne</a></li>
-          <li><a href="pays/belgique.html">🇧🇪 Belgique</a></li>
-          <li><a href="pays/italie.html">🇮🇹 Italie</a></li>
-          <li><a href="pays/canada.html">🇨🇦 Canada</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Ressources</h4>
-        <ul>
-          <li><a href="articles/visa-etudiant-europe.html">Guide visa étudiant</a></li>
-          <li><a href="articles/budget-etudes-etranger.html">Budget par pays</a></li>
-          <li><a href="articles/erreurs-visa-etudiant.html">Erreurs à éviter</a></li>
-          <li><a href="articles/bourses-etudiants-africains.html">Bourses disponibles</a></li>
-          <li><a href="articles/logement-etudiant-etranger.html">Trouver un logement</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="contact.html">Nous contacter</a></li>
-          <li><a href="https://wa.me/22899324636" target="_blank" rel="noopener">WhatsApp direct</a></li>
-        </ul>
+      <div class="destinations-grid">
+        <article class="dest-card fade-up" onclick="window.location='france.html'" tabindex="0" role="button"
+          aria-label="Étudier en France">
+          <div class="dest-card__header">
+            <img src="images/fr.png" alt="Drapeau France" class="dest-card__flag" style="height:auto;">
+            <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#002395,#fff,#ed2939);"></div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__country">France</h3>
+            <p class="dest-card__desc">Le choix numéro 1 des étudiants africains. Frais réduits dans les universités
+              publiques, réseau culturel fort, nombreuses bourses.</p>
+            <div class="dest-card__meta">
+              <span class="meta-tag">Campus France</span>
+              <span class="meta-tag">Visa D</span>
+              <span class="meta-tag">Bourses</span>
+            </div>
+            <a href="france.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions
+              →</a>
+          </div>
+        </article>
+        <article class="dest-card fade-up" onclick="window.location='allemagne.html'" tabindex="0" role="button"
+          aria-label="Étudier en Allemagne">
+          <div class="dest-card__header">
+            <img src="images/de.png" alt="Drapeau Allemagne" class="dest-card__flag" style="height:auto;">
+            <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#000,#dd0000,#ffce00);"></div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__country">Allemagne</h3>
+            <p class="dest-card__desc">Universités gratuites ou quasi-gratuites, excellence académique, marché de
+              l'emploi très attractif pour les diplômés.</p>
+            <div class="dest-card__meta">
+              <span class="meta-tag">Gratuit</span>
+              <span class="meta-tag">APS 18 mois</span>
+              <span class="meta-tag">Technologie</span>
+            </div>
+            <a href="allemagne.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les
+              conditions →</a>
+          </div>
+        </article>
+        <article class="dest-card fade-up" onclick="window.location='belgique.html'" tabindex="0" role="button"
+          aria-label="Étudier en Belgique">
+          <div class="dest-card__header">
+            <img src="images/be.png" alt="Drapeau Belgique" class="dest-card__flag" style="height:auto;">
+            <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#000,#f00,#fdda24);"></div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__country">Belgique</h3>
+            <p class="dest-card__desc">Francophone et accessible, la Belgique offre des formations de qualité avec une
+              bonne qualité de vie et des frais raisonnables.</p>
+            <div class="dest-card__meta">
+              <span class="meta-tag">Francophone</span>
+              <span class="meta-tag">Visa C</span>
+              <span class="meta-tag">ULB · KUL</span>
+            </div>
+            <a href="belgique.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les
+              conditions →</a>
+          </div>
+        </article>
+        <article class="dest-card fade-up" onclick="window.location='italie.html'" tabindex="0" role="button"
+          aria-label="Étudier en Italie">
+          <div class="dest-card__header">
+            <img src="images/it.png" alt="Drapeau Italie" class="dest-card__flag" style="height:auto;">
+            <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#009246,#fff,#ce2b37);"></div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__country">Italie</h3>
+            <p class="dest-card__desc">Architecture, design, art et ingénierie — l'Italie excelle dans ces domaines avec
+              des frais de scolarité parmi les plus bas d'Europe.</p>
+            <div class="dest-card__meta">
+              <span class="meta-tag">Art & Design</span>
+              <span class="meta-tag">Visa étude</span>
+              <span class="meta-tag">Abordable</span>
+            </div>
+            <a href="italie.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions
+              →</a>
+          </div>
+        </article>
+        <article class="dest-card fade-up" onclick="window.location='canada.html'" tabindex="0" role="button"
+          aria-label="Étudier au Canada">
+          <div class="dest-card__header">
+            <img src="images/ca.png" alt="Drapeau Canada" class="dest-card__flag" style="height:auto;">
+            <div class="dest-card__header-bg" style="background:linear-gradient(135deg,#ff0000,#fff,#ff0000);"></div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__country">Canada</h3>
+            <p class="dest-card__desc">Bilingue français-anglais, le Canada offre une porte d'entrée vers la résidence
+              permanente. Idéal pour un projet long terme.</p>
+            <div class="dest-card__meta">
+              <span class="meta-tag">Immigration</span>
+              <span class="meta-tag">Permis études</span>
+              <span class="meta-tag">Bilingue</span>
+            </div>
+            <a href="canada.html" class="btn btn-outline" style="width:100%;justify-content:center;">Voir les conditions
+              →</a>
+          </div>
+        </article>
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>© 2025 Modzi Info. Tous droits réservés.</span>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<script src="main.js"></script>
+  <!-- HOW IT WORKS -->
+  <section class="section section--beige" aria-labelledby="how-title">
+    <div class="container">
+      <div class="fade-up" style="text-align:center;">
+        <div class="tag">Comment ça marche</div>
+        <h2 class="section-title" id="how-title">3 étapes pour <em>réaliser ton projet</em></h2>
+        <p class="section-subtitle" style="margin:16px auto 0;text-align:center;">Un processus simple, clair et guidé
+          pour ne rien oublier.</p>
+      </div>
+      <div class="steps">
+        <div class="step fade-up">
+          <div class="step__num">1</div>
+          <h3 class="step__title">Choisir un pays</h3>
+          <p class="step__desc">Compare les 5 destinations selon ton profil, ton budget et tes objectifs. Chaque pays a
+            ses spécificités — on t'aide à voir clair.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step__num">2</div>
+          <h3 class="step__title">Comprendre les démarches</h3>
+          <p class="step__desc">Visa, inscription, logement — nos guides détaillés couvrent chaque étape pour que tu
+            sois prêt(e) bien avant les délais.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step__num">3</div>
+          <h3 class="step__title">Lancer ta candidature</h3>
+          <p class="step__desc">Tu as toutes les clés en main. Notre équipe reste disponible sur WhatsApp pour
+            t'accompagner jusqu'à l'obtention de ton visa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="section" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="fade-up" style="text-align:center;">
+        <div class="tag">Témoignages</div>
+        <h2 class="section-title" id="testimonials-title">Ils nous font <em>confiance</em></h2>
+        <p class="section-subtitle" style="margin:16px auto 0;text-align:center;">Plus de 500 étudiants africains ont
+          trouvé leur destination grâce à Modzi Info.</p>
+      </div>
+
+      <div class="testimonials-wrapper">
+        <button class="carousel-btn prev-btn" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonials-container" id="testimonials-slider">
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Modzi Info m'a sauvé ! J'étais complètement perdu pour mon dossier Campus
+              France. En 3 mois avec leur aide, j'avais mon visa pour Paris. Merci infiniment !"</p>
+            <div class="testimonial-author">
+              <img src="images/kofi.jpg" alt="Photo Kofi" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name">Kofi</div>
+                <div class="testimonial-location">Togo → France</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Les guides sont super complets. J'ai suivi chaque étape et j'ai été acceptée à
+              Berlin avec une bourse Erasmus+. Le meilleur conseil ? La lettre de motivation personnalisée !"</p>
+            <div class="testimonial-author">
+              <img src="images/aissatou.jpg" alt="Photo Aissatou" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name">Aïssatou</div>
+                <div class="testimonial-location">Sénégal → Allemagne</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"J'ai contacté l'équipe sur WhatsApp avec une question impossible. Ils m'ont
+              répondu en 2h. Grâce à eux, je suis maintenant étudiant à Toronto et en route pour la RP !"</p>
+            <div class="testimonial-author">
+              <img src="images/marc.jpg" alt="Photo Marc" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name">Marc</div>
+                <div class="testimonial-location">Cameroun → Canada</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Sans Modzi Info, je n'aurais jamais réussi à obtenir mon visa pour l'Italie.
+              Leur guide sur les bourses m'a permis d'économiser 5000€ par an. Une équipe exceptionnelle !"</p>
+            <div class="testimonial-author">
+              <img src="images/fatima.jpg" alt="Photo Fatima" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name">Fatima</div>
+                <div class="testimonial-location">Maroc → Italie</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next-btn" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin-top:64px;">
+        <div style="text-align:center;padding:24px;">
+          <div
+            style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">
+            500+</div>
+          <div style="font-size:0.9rem;color:var(--muted);">Étudiants accompagnés</div>
+        </div>
+        <div style="text-align:center;padding:24px;">
+          <div
+            style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">
+            92%</div>
+          <div style="font-size:0.9rem;color:var(--muted);">Taux de succès visa</div>
+        </div>
+        <div style="text-align:center;padding:24px;">
+          <div
+            style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">
+            5</div>
+          <div style="font-size:0.9rem;color:var(--muted);">Pays couverts</div>
+        </div>
+        <div style="text-align:center;padding:24px;">
+          <div
+            style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold);margin-bottom:8px;">
+            &lt;24h</div>
+          <div style="font-size:0.9rem;color:var(--muted);">Temps de réponse</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="section" id="articles" aria-labelledby="articles-title">
+    <div class="container">
+      <div class="fade-up"
+        style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+        <div>
+          <div class="tag">Ressources</div>
+          <h2 class="section-title" id="articles-title">Guides &amp; <em>Conseils pratiques</em></h2>
+        </div>
+        <a href="articles/index.html" class="btn btn-outline">Tous les articles →</a>
+      </div>
+      <div class="articles-grid">
+        <article class="article-card fade-up">
+          <div class="article-card__thumb"><img src="images/article 1.jpg" alt="Documents et visa"
+              style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="article-card__body">
+            <div class="article-card__category">Visa &amp; Démarches</div>
+            <h3 class="article-card__title">Comment obtenir un visa étudiant en Europe : le guide complet</h3>
+            <p class="article-card__excerpt">Types de visa, documents requis, délais, entretien consulaire — tout ce que
+              tu dois savoir avant de déposer ton dossier.</p>
+            <div class="article-card__footer">
+              <span>12 min de lecture</span>
+              <a href="articles/index.html#modal-visa-etudiant" class="btn btn-primary"
+                style="padding:8px 18px;font-size:0.75rem;">Lire →</a>
+            </div>
+          </div>
+        </article>
+        <article class="article-card fade-up">
+          <div class="article-card__thumb"><img src="images/article 2.jpg" alt="Budget et finances"
+              style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="article-card__body">
+            <div class="article-card__category">Budget &amp; Finances</div>
+            <h3 class="article-card__title">Budget réaliste pour étudier à l'étranger depuis l'Afrique</h3>
+            <p class="article-card__excerpt">Frais de scolarité, logement, alimentation, transport — un budget pays par
+              pays pour préparer ton projet sans mauvaises surprises.</p>
+            <div class="article-card__footer">
+              <span>9 min de lecture</span>
+              <a href="articles/index.html#modal-budget-etudes" class="btn btn-primary"
+                style="padding:8px 18px;font-size:0.75rem;">Lire →</a>
+            </div>
+          </div>
+        </article>
+        <article class="article-card fade-up">
+          <div class="article-card__thumb"><img src="images/article 3.jpg" alt="Erreurs à éviter"
+              style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="article-card__body">
+            <div class="article-card__category">Erreurs à éviter</div>
+            <h3 class="article-card__title">Les 10 erreurs qui font rater un visa étudiant</h3>
+            <p class="article-card__excerpt">Dossier incomplet, mauvais timing, lettre de motivation bâclée… Ces erreurs
+              peuvent coûter un an d'attente. Évite-les.</p>
+            <div class="article-card__footer">
+              <span>8 min de lecture</span>
+              <a href="articles/index.html#modal-erreurs-visa" class="btn btn-primary"
+                style="padding:8px 18px;font-size:0.75rem;">Lire →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONVERSION CTA -->
+  <section class="section section--dark conversion" aria-labelledby="cta-title">
+    <div class="conversion__bg" aria-hidden="true"></div>
+    <div class="container conversion__content">
+      <div class="fade-up">
+        <div class="tag tag--light">Accompagnement</div>
+        <h2 class="conversion__title" id="cta-title">Besoin d'aide pour<br>ton <em>projet d'études</em> ?</h2>
+        <p class="conversion__text">
+          Notre équipe répond à toutes tes questions sur WhatsApp. Visa, dossier, université, budget — on t'accompagne
+          de A à Z.
+        </p>
+        <a href="#" class="btn btn-whatsapp" data-wa-generic>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Parler à un conseiller
+        </a>
+        <div class="conversion__trust">
+          <div class="conversion__trust-item">Réponse sous 24h</div>
+          <div class="conversion__trust-item">Conseils personnalisés</div>
+          <div class="conversion__trust-item">100% gratuit</div>
+          <div class="conversion__trust-item">Sans engagement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="Modzi Info" onerror="this.style.display='none'">
+          <p>La plateforme de référence pour les étudiants qui veulent étudier en Europe et au Canada.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="pays/france.html">🇫🇷 France</a></li>
+            <li><a href="pays/allemagne.html">🇩🇪 Allemagne</a></li>
+            <li><a href="pays/belgique.html">🇧🇪 Belgique</a></li>
+            <li><a href="pays/italie.html">🇮🇹 Italie</a></li>
+            <li><a href="pays/canada.html">🇨🇦 Canada</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="articles/visa-etudiant-europe.html">Guide visa étudiant</a></li>
+            <li><a href="articles/budget-etudes-etranger.html">Budget par pays</a></li>
+            <li><a href="articles/erreurs-visa-etudiant.html">Erreurs à éviter</a></li>
+            <li><a href="articles/bourses-etudiants-africains.html">Bourses disponibles</a></li>
+            <li><a href="articles/logement-etudiant-etranger.html">Trouver un logement</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="https://wa.me/33675700925" target="_blank" rel="noopener">WhatsApp direct</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Modzi Info. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
+
 </html>

@@ -34,7 +34,7 @@ footer = '''<footer class="footer">
       <h4>Modzi Info</h4>
       <p>La plateforme de référence pour les étudiants africains souhaitant étudier en Europe et au Canada.</p>
       <div class="footer__social">
-        <a href="https://wa.me/22899324636" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <a href="https://wa.me/33675700925" target="_blank" rel="noopener" aria-label="WhatsApp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </div>
@@ -62,7 +62,7 @@ footer = '''<footer class="footer">
       <h4>Contact</h4>
       <ul>
         <li><a href="contact.html">Nous contacter</a></li>
-        <li><a href="https://wa.me/22899324636" target="_blank" rel="noopener">WhatsApp direct</a></li>
+        <li><a href="https://wa.me/33675700925" target="_blank" rel="noopener">WhatsApp direct</a></li>
       </ul>
     </div>
   </div>
