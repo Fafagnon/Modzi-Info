@@ -33,7 +33,7 @@ document.querySelectorAll('[data-wa-country]').forEach(el => {
   el.target = '_blank'; el.rel = 'noopener noreferrer';
 });
 document.querySelectorAll('[data-wa-generic]').forEach(el => {
-  el.href = 'https://wa.me/33675700925?text=' + encodeURIComponent("Bonjour, j'ai besoin d'aide pour mon projet d'études à l'étranger.");
+  el.href = 'https://wa.me/33675700925?text=' + encodeURIComponent('Bonjour, Je souhaite en savoir plus sur votre service AVI et ASSISTANCE VISA');
   el.target = '_blank'; el.rel = 'noopener noreferrer';
 });
 
@@ -279,3 +279,4 @@ function initTestimonialsCarousel() {
     });
   }
 }
+

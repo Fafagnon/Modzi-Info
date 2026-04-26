@@ -4,9 +4,9 @@ root = Path(r"c:\Users\HP\Desktop\Modzi-Info")
 
 nav = '''<nav class="navbar" aria-label="Navigation principale">
   <div class="navbar__inner">
-    <a class="navbar__logo" href="index.html" aria-label="Modzi Info - Accueil">
-      <img src="images/logo.png" alt="Modzi Info Logo" width="64" height="64" onerror="this.nextElementSibling.style.display='inline';">
-      <span class="navbar__logo-text" style="display:none;">Modzi Info</span>
+    <a class="navbar__logo" href="index.html" aria-label="Light Study - Accueil">
+      <img src="images/logo.png" alt="Light Study Logo" width="64" height="64" onerror="this.nextElementSibling.style.display='inline';">
+      <span class="navbar__logo-text" style="display:none;">Light Study</span>
     </a>
     <ul class="navbar__links" role="list">
       <li><a href="index.html">Accueil</a></li>
@@ -31,7 +31,7 @@ nav = '''<nav class="navbar" aria-label="Navigation principale">
 footer = '''<footer class="footer">
   <div class="container footer__grid">
     <div class="footer__col">
-      <h4>Modzi Info</h4>
+      <h4>Light Study</h4>
       <p>La plateforme de référence pour les étudiants africains souhaitant étudier en Europe et au Canada.</p>
       <div class="footer__social">
         <a href="https://wa.me/33675700925" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -67,7 +67,7 @@ footer = '''<footer class="footer">
     </div>
   </div>
   <div class="footer__bottom">
-    <span>© 2025 Modzi Info. Tous droits réservés.</span>
+    <span>© 2025 Light Study. Tous droits réservés.</span>
     <span>Fait avec ❤️ pour les étudiants africains</span>
   </div>
 </footer>
@@ -199,7 +199,7 @@ fr_main = ''.join([
     block_template.format(icon='exclamation-triangle', title='Erreurs fréquentes', content=warning_template.format(title='À éviter absolument', items='\n'.join([warning_item.format(text=t) for t in ['Poster ton dossier trop tard.', 'Ne pas prouver des ressources suffisantes.', 'Négliger la lettre de motivation.', 'Oublier de valider le VLS-TS.', 'Choisir une formation non reconnue.']]))),
 ])
 fr_budget = '\n'.join([f'          <div class="budget-line"><span class="budget-line__label">{label}</span><span class="budget-line__val">{value}</span></div>' for label, value in [('Logement', '350–600€'), ('Alimentation', '200–300€'), ('Transport', '50–80€'), ('Loisirs', '80–150€'), ('Total estimé', '680–1130€')]])
-pages.append((root / 'france.html', page_template.format(title='Étudier en France — Visa, Conditions, Budget | Modzi Info', description='Guide complet pour les étudiants africains souhaitant étudier en France : visa, Campus France, budget et démarches.', keywords='étudier en France, visa étudiant France, Campus France, études Afrique, APS France', canonical='https://modzi.info/france', ld_json='<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Étudier en France : guide complet pour étudiants africains","description":"Visa, Campus France, conditions d\'admission et budget pour étudier en France","author":{"@type":"Organization","name":"Modzi Info"}}</script>', nav=nav, flag='🇫🇷', tag='Destination Europe', hero_title='🇫🇷 Étudier en France', hero_subtitle='Un choix sûr pour les francophones : frais maîtrisés, accompagnement Campus France et un marché européen attractif.', quick_stats=fr_quick, main_blocks=fr_main, aside=country_aside.format(country='France', budget_lines=fr_budget), footer=footer)))
+pages.append((root / 'france.html', page_template.format(title='Étudier en France — Visa, Conditions, Budget | Light Study', description='Guide complet pour les étudiants africains souhaitant étudier en France : visa, Campus France, budget et démarches.', keywords='étudier en France, visa étudiant France, Campus France, études Afrique, APS France', canonical='https://modzi.info/france', ld_json='<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Étudier en France : guide complet pour étudiants africains","description":"Visa, Campus France, conditions d\'admission et budget pour étudier en France","author":{"@type":"Organization","name":"Light Study"}}</script>', nav=nav, flag='🇫🇷', tag='Destination Europe', hero_title='🇫🇷 Étudier en France', hero_subtitle='Un choix sûr pour les francophones : frais maîtrisés, accompagnement Campus France et un marché européen attractif.', quick_stats=fr_quick, main_blocks=fr_main, aside=country_aside.format(country='France', budget_lines=fr_budget), footer=footer)))
 
 # Allemagne
 al_quick = ''.join([quick_stat.format(value=v, label=l) for v, l in [('0€', 'Frais de scolarité'), ('700–1100€', 'Budget mensuel'), ('3–6 mois', 'Délai APS'), ('18 mois', 'Après études')]])
@@ -211,4 +211,5 @@ al_main = ''.join([
     block_template.format(icon='exclamation-triangle', title='Erreurs fréquentes', content=warning_template.format(title='À éviter absolument', items='\n'.join([warning_item.format(text=t) for t in ['Oublier le blocage bancaire.', 'Choisir une université non accréditée.', 'Sous-estimer le niveau d’allemand.', 'Ne pas préparer l’assurance santé.', 'Postuler trop tard à l’APS.']]))),
 ])
 al_budget = '\n'.join([f'          <div class="budget-line"><span class="budget-line__label">{label}</span><span class="budget-line__val">{value}</span></div>' for label, value in [('Logement', '300–500€'), ('Alimentation', '200–300€'), ('Transport', '50–100€'), ('Loisirs', '80–150€'), ('Total estimé', '630–1050€')]])
-pages.append((root / 'allemagne.html', page_template.format(title='Étudier en Allemagne — Visa, Conditions, Budget | Modzi Info', description='Guide pour étudier en Allemagne depuis l’Afrique : admission, APS, visa étudiant et budget.', keywords='étudier en Allemagne, visa étudiant Allemagne, APS, études Afrique, blocage bancaire', canonical='https://modzi.info/allemagne', ld_json='<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Allemagne : guide complet pour étudiants africains","description":"Visa, APS, conditions d\'admission et budget pour étudier en Allemagne","author":{"@type":"Organization","name":"Modzi Info"}}</script>', nav=nav, flag='🇩🇪', tag='Destination Europe', hero_title='🇩🇪 Étudier en Allemagne', hero_subtitle='Frais de scolarité gratuits et un permis post-études de 18 mois pour les diplômés internationaux.', quick_stats=al_quick, main_blocks=al_main, aside=country_aside.format(country='Allemagne', budget_lines=al_budget), footer=footer)))
+pages.append((root / 'allemagne.html', page_template.format(title='Étudier en Allemagne — Visa, Conditions, Budget | Light Study', description='Guide pour étudier en Allemagne depuis l’Afrique : admission, APS, visa étudiant et budget.', keywords='étudier en Allemagne, visa étudiant Allemagne, APS, études Afrique, blocage bancaire', canonical='https://modzi.info/allemagne', ld_json='<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Allemagne : guide complet pour étudiants africains","description":"Visa, APS, conditions d\'admission et budget pour étudier en Allemagne","author":{"@type":"Organization","name":"Light Study"}}</script>', nav=nav, flag='🇩🇪', tag='Destination Europe', hero_title='🇩🇪 Étudier en Allemagne', hero_subtitle='Frais de scolarité gratuits et un permis post-études de 18 mois pour les diplômés internationaux.', quick_stats=al_quick, main_blocks=al_main, aside=country_aside.format(country='Allemagne', budget_lines=al_budget), footer=footer)))
+

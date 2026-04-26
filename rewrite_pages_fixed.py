@@ -4,9 +4,9 @@ root = Path(r"c:\Users\HP\Desktop\Modzi-Info")
 
 nav = '''<nav class="navbar" aria-label="Navigation principale">
   <div class="navbar__inner">
-    <a class="navbar__logo" href="index.html" aria-label="Modzi Info - Accueil">
-      <img src="images/logo.png" alt="Modzi Info Logo" width="64" height="64" onerror="this.nextElementSibling.style.display='inline';">
-      <span class="navbar__logo-text" style="display:none;">Modzi Info</span>
+    <a class="navbar__logo" href="index.html" aria-label="Light Study - Accueil">
+      <img src="images/logo.png" alt="Light Study Logo" width="64" height="64" onerror="this.nextElementSibling.style.display='inline';">
+      <span class="navbar__logo-text" style="display:none;">Light Study</span>
     </a>
     <ul class="navbar__links" role="list">
       <li><a href="index.html">Accueil</a></li>
@@ -31,7 +31,7 @@ nav = '''<nav class="navbar" aria-label="Navigation principale">
 footer = '''<footer class="footer">
   <div class="container footer__grid">
     <div class="footer__col">
-      <h4>Modzi Info</h4>
+      <h4>Light Study</h4>
       <p>La plateforme de référence pour les étudiants africains souhaitant étudier en Europe et au Canada.</p>
       <div class="footer__social">
         <a href="https://wa.me/33675700925" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -67,7 +67,7 @@ footer = '''<footer class="footer">
     </div>
   </div>
   <div class="footer__bottom">
-    <span>© 2025 Modzi Info. Tous droits réservés.</span>
+    <span>© 2025 Light Study. Tous droits réservés.</span>
     <span>Fait avec ❤️ pour les étudiants africains</span>
   </div>
 </footer>
@@ -213,7 +213,7 @@ def build_country_page(path, title, description, keywords, canonical, flag, tag,
         description=description,
         keywords=keywords,
         canonical=canonical,
-        ld_json=f'<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{description}","author":{{"@type":"Organization","name":"Modzi Info"}}}}</script>',
+        ld_json=f'<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{description}","author":{{"@type":"Organization","name":"Light Study"}}}}</script>',
         nav=nav,
         flag=flag,
         tag=tag,
@@ -235,7 +235,7 @@ destinations_html = '''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Destinations pour étudier — Europe et Canada | Modzi Info</title>
+  <title>Destinations pour étudier — Europe et Canada | Light Study</title>
   <meta name="description" content="Compare les 5 destinations pour étudier depuis l'Afrique : France, Allemagne, Belgique, Italie, Canada. Choisis selon ton budget, ta langue et ton projet après études.">
   <link rel="canonical" href="https://modzi.info/destinations">
   <link rel="stylesheet" href="styles.css">
@@ -480,14 +480,14 @@ france_html = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Étudier en France — Visa, Conditions, Budget | Modzi Info</title>
+  <title>Étudier en France — Visa, Conditions, Budget | Light Study</title>
   <meta name="description" content="Guide complet pour les étudiants africains souhaitant étudier en France : visa, Campus France, budget et démarches.">
   <meta name="keywords" content="étudier en France, visa étudiant France, Campus France, études Afrique, APS France">
   <link rel="canonical" href="https://modzi.info/france">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en France : guide complet pour étudiants africains","description":"Visa, Campus France, conditions d'admission et budget pour étudier en France","author":{{"@type":"Organization","name":"Modzi Info"}}}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en France : guide complet pour étudiants africains","description":"Visa, Campus France, conditions d'admission et budget pour étudier en France","author":{{"@type":"Organization","name":"Light Study"}}}}</script>
 </head>
 <body>
 {nav}
@@ -639,14 +639,14 @@ allemagne_html = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Étudier en Allemagne — Visa, Conditions, Budget | Modzi Info</title>
+  <title>Étudier en Allemagne — Visa, Conditions, Budget | Light Study</title>
   <meta name="description" content="Guide pour étudier en Allemagne depuis l’Afrique : admission, APS, visa étudiant et budget.">
   <meta name="keywords" content="étudier en Allemagne, visa étudiant Allemagne, APS, études Afrique, blocage bancaire">
   <link rel="canonical" href="https://modzi.info/allemagne">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Allemagne : guide complet pour étudiants africains","description":"Visa, APS, conditions d'admission et budget pour étudier en Allemagne","author":{{"@type":"Organization","name":"Modzi Info"}}}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Allemagne : guide complet pour étudiants africains","description":"Visa, APS, conditions d'admission et budget pour étudier en Allemagne","author":{{"@type":"Organization","name":"Light Study"}}}}</script>
 </head>
 <body>
 {nav}
@@ -798,14 +798,14 @@ belgique_html = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Étudier en Belgique — Visa, Conditions, Budget | Modzi Info</title>
+  <title>Étudier en Belgique — Visa, Conditions, Budget | Light Study</title>
   <meta name="description" content="Guide pour étudier en Belgique depuis l’Afrique : admission, visa étudiant et budget.">
   <meta name="keywords" content="étudier en Belgique, visa étudiant Belgique, université Belgique, études Afrique, CESS Belgique">
   <link rel="canonical" href="https://modzi.info/belgique">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Belgique : guide complet pour étudiants africains","description":"Visa, conditions d'admission et budget pour étudier en Belgique","author":{{"@type":"Organization","name":"Modzi Info"}}}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Belgique : guide complet pour étudiants africains","description":"Visa, conditions d'admission et budget pour étudier en Belgique","author":{{"@type":"Organization","name":"Light Study"}}}}</script>
 </head>
 <body>
 {nav}
@@ -957,14 +957,14 @@ italie_html = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Étudier en Italie — Visa, Conditions, Budget | Modzi Info</title>
+  <title>Étudier en Italie — Visa, Conditions, Budget | Light Study</title>
   <meta name="description" content="Guide pour étudier en Italie depuis l’Afrique : admission, visa étudiant et budget.">
   <meta name="keywords" content="étudier en Italie, visa étudiant Italie, études Afrique, portfolio artistique, Visa D">
   <link rel="canonical" href="https://modzi.info/italie">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Italie : guide complet pour étudiants africains","description":"Visa, conditions d'admission et budget pour étudier en Italie","author":{{"@type":"Organization","name":"Modzi Info"}}}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier en Italie : guide complet pour étudiants africains","description":"Visa, conditions d'admission et budget pour étudier en Italie","author":{{"@type":"Organization","name":"Light Study"}}}}</script>
 </head>
 <body>
 {nav}
@@ -1116,14 +1116,14 @@ canada_html = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Étudier au Canada — Visa, Conditions, Budget | Modzi Info</title>
+  <title>Étudier au Canada — Visa, Conditions, Budget | Light Study</title>
   <meta name="description" content="Guide complet pour étudier au Canada depuis l’Afrique : permis d’études, budget, admission et PGWP.">
   <meta name="keywords" content="étudier au Canada, visa étudiant Canada, PGWP, budget Canada, DLI">
   <link rel="canonical" href="https://modzi.info/canada">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier au Canada : guide complet pour étudiants africains","description":"Visa, conditions d'admission et budget pour étudier au Canada","author":{{"@type":"Organization","name":"Modzi Info"}}}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Article","headline":"Étudier au Canada : guide complet pour étudiants africains","description":"Visa, conditions d'admission et budget pour étudier au Canada","author":{{"@type":"Organization","name":"Light Study"}}}}</script>
 </head>
 <body>
 {nav}
@@ -1270,3 +1270,4 @@ canada_html = f'''<!DOCTYPE html>
 Path(root / 'canada.html').write_text(canada_html, encoding='utf-8')
 
 print('Updated pages: destinations, france, allemagne, belgique, italie, canada')
+
